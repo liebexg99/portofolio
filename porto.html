@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: helvetica;
+            background-color: rgb(215, 215, 215);
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: start;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+            margin-bottom: 8%;
+            margin-left: 8%;
+        }
+
+        .text h1 {
+            letter-spacing: -8px;
+            color: rgb(0, 0, 0);
+            font-size: 80px;
+            line-height: 90px;
+            animation: uptext 1200ms ease-in-out;
+            animation-delay: 300ms;
+            z-index: -1;
+            font-weight: 10;
+        }
+
+        .text .text1{
+            background-color: rgb(255, 252, 240);
+            width: 50%;
+            padding-left: 20px;
+            margin-left: -20px;
+            animation: hitext 1200ms ease-in-out;
+        }
+
+        @keyframes hitext {
+            from {
+                width: 0;
+                opacity: 0;
+                transform: translateY(5vh);
+            }
+            to {
+                width: 50%;
+            }
+        }
+
+        @keyframes uptext {
+            from {
+                transform: translateY(5vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes opac {
+            from {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="text">
+            <h1 class="text1">Hi..</h1>
+            <h1>My name is Nash!</h1>
+            <h1>I am a <span>UI/UX</span> designer <img style="max-width: 5%; box-shadow: -6px 10px 10px rgba(0, 0, 0, 0.302); transform: translateY(8px); border-radius: 12px;" src="https://play-lh.googleusercontent.com/hoVBnPBRehmXsCqESLXRH2E3OTxklkwKZlb1psn7imm0VUSobn2nevS9RRFWb9GM4-o" alt=""></h1>
+        </div>
+    </div>
+</body>
+</html>
